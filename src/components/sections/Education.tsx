@@ -218,7 +218,7 @@ const Education = () => {
       details: (
         <ul className="list-disc list-inside">
           <li>Aug 2023 - Jul 2027</li>
-          <li>CGPA: 7.99 | Latest SGPA: 8.92</li>
+          <li>CGPA: 8.00 | Latest SGPA: 8.92</li>
         </ul>
       ),
     },

@@ -77,20 +77,39 @@ const Hero = () => {
 
       <div className="w-full md:w-2/3 flex flex-col gap-6" id="about">
         <div className="bg-custom-yellow p-6 md:p-10 rounded-3xl border-4 border-black shadow-neo">
-          <h2 className="text-4xl font-shrikhand mb-6">Hi people! 👋</h2>
+          <p className="text-sm font-bold tracking-widest uppercase text-gray-600 mb-6">
+  Software Developer&nbsp;&nbsp;·&nbsp;&nbsp;IIIT Bhagalpur&nbsp;&nbsp;·&nbsp;&nbsp;Open to Work
+</p>
+          <h2 className="text-4xl font-shrikhand mb-6 leading-tight">
+  I build systems that scale,<br/>
+  <em className="font-serif italic text-gray-400">not just</em><br/>
+  code that runs.
+</h2>
+
           <p className="text-lg font-medium leading-relaxed mb-4">
-            I am a{" "}
+            Software developer in my third year at{" "}
             <span className="font-bold bg-white px-1 border border-black">
-              B.Tech student at IIIT Bhagalpur
+              IIIT Bhagalpur.
             </span>
-            , focused on backend development, scalable APIs, and system design.
+            {" "}I focus on backend systems and scalable architecture, 
+            but I'm comfortable across the full stack - from database design to deployment. 
+            I've shipped real production code, built SaaS products from scratch, 
+            and designed systems that handle real users under real load. 
+            I like hard problems, clean architecture, and building things that actually work."
           </p>
-          <p className="text-lg font-medium leading-relaxed mb-4">
+          <div className="flex flex-wrap gap-2 mt-4 mb-4">
+  {["Node.js", "PostgreSQL", "Redis", "System Design", "REST APIs", "Java", "Socket.io", "PostGIS"].map((skill) => (
+    <span key={skill} className="px-4 py-2 bg-black text-white text-sm font-mono rounded-full border border-black">
+      {skill}
+    </span>
+  ))}
+</div>
+          {/* <p className="text-lg font-medium leading-relaxed mb-4">
             During my SDE internship at Entrepreneur Growth Labs, I built
             production backend systems around LinkedIn APIs, OAuth2, webhooks,
             and hiring workflows to improve automation, reduce manual effort,
             and ship reliable client facing features on time.
-          </p>
+          </p> */}
           <div className="bg-white p-4 border-2 border-black rounded-xl inline-block font-bold shadow-neo-sm ">
             Open to software developer and related roles
           </div>
